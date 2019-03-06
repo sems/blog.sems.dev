@@ -3,10 +3,7 @@ import styles from './Bio.module.css'
 import { getGravatarURL } from '../utils/getGravatarURL'
 
 function Bio(props) {
-  let photoURL = getGravatarURL({
-    email: "test1@example.com",
-    size: 56,
-  })
+  let photoURL = "https://pbs.twimg.com/profile_images/1052271297827401728/HTouzY_x_200x200.jpg";
 
   return (
     <div className={`
@@ -15,17 +12,8 @@ function Bio(props) {
     `}>
       <img src={photoURL} alt="Me" />
       <p>
-        Create a blog with a single command, by{' '}
-        <a href="https://twitter.com/james_k_nelson/">James K Nelson</a>.
-        <br />
-        Themed after Gatsby's blog starter and Dan Abramov's{' '}
-        <a href="https://overreacted.io/">overreacted.io</a>.<br />
-        Based on{' '}
-        <a href="https://facebook.github.io/create-react-app/">
-          create-react-app
-        </a>
-        , <a href="https://mdxjs.com/">MDX</a>, and{' '}
-        <a href="https://frontarm.com/navi/">Navi</a>.
+        Me trying to blog in English and Dutch. Related to code, tech and more, by{' '}
+        <a href="https://sems.dev">Sem Spanhaak</a>.
       </p>
     </div>
   )
